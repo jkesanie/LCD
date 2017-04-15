@@ -1,0 +1,82 @@
+@prefix qb4cc:          <http://data.hulib.helsinki.fi/ns/qb4cc#> .
+@prefix rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:            <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:           <http://www.w3.org/2004/02/skos/core#> .
+@prefix qb:             <http://purl.org/linked-data/cube#> .
+@prefix dct:        	  <http://purl.org/dc/terms/> .
+@prefix foaf: 			    <http://xmlns.com/foaf/0.1/>.
+@prefix lcd: 			      <http://data.hulib.helsinki.fi/ns/lcd#>.
+@prefix lcd-code: 			      <http://data.hulib.helsinki.fi/ns/lcd-code#>.
+@prefix :               <http://github.com/jkesanie/LCD/QB4CC/hc-cord1#> .
+
+# Frequency type code list
+
+lcd-code:frequencyType
+  a skos:ConceptScheme ;
+  skos:prefLabel "Code list for frequency types - codelist scheme"@en;
+  rdfs:label "Code list for frequency types - codelist scheme"@en;
+  skos:hasTopConcept lcd-code:freq-type-abs ;
+  skos:hasTopConcept lcd-code:freq-type-norm ;
+.
+
+lcd-code:FrequencyType
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "Code list for frequency types - codelist class"@en ;
+.
+
+lcd-code:freq-type-abs
+  a skos:Concept, lcd-code:FrequencyType ;
+  skos:prefLabel "Absolute";
+  skos:inScheme lcd-code:frequencyType ;
+  skos:topConceptOf lcd-code:frequencyType ;
+.
+
+lcd-code:freq-type-norm
+  a skos:Concept, lcd-code:FrequencyType ;
+  skos:prefLabel "Normalized";
+  skos:inScheme lcd-code:frequencyType ;
+  skos:topConceptOf lcd-code:frequencyType ;
+.
+
+# Frequency sources code list
+
+lcd-code:frequencySource
+  a skos:ConceptScheme ;
+  skos:prefLabel "Code list for frequency sources - codelist scheme"@en;
+  rdfs:label "Code list for frequency sources - codelist scheme"@en;
+  skos:hasTopConcept lcd-code:freq-source-a ;
+  skos:hasTopConcept lcd-code:freq-source-g ;
+  skos:hasTopConcept lcd-code:freq-source-i ;
+.
+
+lcd-code:FrequencySource
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "Code list for frequency sources - codelist class"@en ;
+.
+
+
+lcd-code:freq-source-a
+  a skos:Concept;
+  skos:prefLabel "Asserted";
+  skos:note "Extracted from the original publication.";
+  skos:inScheme lcd-code:frequencySource ;
+  skos:topConceptOf lcd-code:frequencySource ;
+.
+lcd-code:freq-source-g
+  a skos:Concept;
+  skos:prefLabel "Generated";
+  skos:note "Generated automatically as part of the processing using external data.";
+  skos:inScheme lcd-code:frequencySource ;
+  skos:topConceptOf lcd-code:frequencySource ;
+.
+lcd-code:freq-source-i
+  a skos:Concept;
+  skos:prefLabel "Inputted";
+  skos:note "Inputted manually as part of the processing using external data.";
+  skos:inScheme lcd-code:frequencySource ;
+  skos:topConceptOf lcd-code:frequencySource ;
+.
