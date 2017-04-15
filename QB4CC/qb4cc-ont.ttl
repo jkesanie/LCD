@@ -1,0 +1,91 @@
+@prefix qb4cc:          <http://data.hulib.helsinki.fi/ns/qb4cc#> .
+@prefix rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:            <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:           <http://www.w3.org/2004/02/skos/core#> .
+@prefix qb:             <http://purl.org/linked-data/cube#> .
+@prefix dct:        	  <http://purl.org/dc/terms/> .
+@prefix foaf: 			    <http://xmlns.com/foaf/0.1/>.
+@prefix lcd: 			      <http://data.hulib.helsinki.fi/ns/lcd#>.
+@prefix :               <http://github.com/jkesanie/LCD/QB4CC#> .
+:qb4cc
+  a owl:Ontology;
+  dct:creator [ foaf:name "Joonas Kesäniemi"; ];
+	dct:created "2017-04-15"^^xsd:date ;
+	dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+	rdfs:label "QB4CC: LCD Corpus Composition extension for RDF data cube"@en;
+  rdfs:comment "Jeps" ;
+.
+# New classes
+
+qb4cc:CorpusCompositionDefinition
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:subClassOf qb:DataStructureDefinition ;
+.
+qb4cc:CorpusComposition
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf qb:DataSet ;
+.
+qb4cc:CorpusPart
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf qb:Observation ;
+.
+qb4cc:TimePeriod
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf lcd:TimePeriod ;
+.
+
+# new properties
+
+qb4cc:isPartOfComposition
+  rdfs:subPropertyOf qb:dataSet ;
+.
+qb4cc:startYear
+  rdfs:subClassOf rdfs:Property ;
+  rdfs:label "Start of the year interval for observation";
+  rdfs:range xsd:integer ;
+.
+qb4cc:endYear
+  rdfs:subClassOf rdfs:Property ;
+  rdfs:label "End of the year interval for observation";
+  rdfs:range xsd:integer ;
+.
+
+# Measure
+qb4cc:wordCount
+  rdfs:subClassOf qb:MeasureProperty, rdf:Property ;
+  rdfs:label "word count" ;
+  rdfs:range xsd:integer ;
+  rdfs:domain qb4cc:CorpusPart ;
+.
+qb4cc:frequency
+  rdfs:subClassOf qb:MeasureProperty, rdf:Property ;
+  rdfs:label "frequency" ;
+  rdfs:range xsd:decimal ;
+.
+
+# Dimension
+
+qb4cc:corpus
+  rdfs:subClassOf rdfs:Property, qb:ComponentProperty, qb:DimensionProperty ;
+  rdfs:label "Corpus dimension property";
+  rdfs:comment "Corpus dimension property that limits how the corpus information is attached to observations";
+  rdfs:range lcd:Corpus ;
+.
+qb4cc:genre
+  rdfs:subClassOf rdfs:Property, qb:ComponentProperty ;
+  rdfs:label "Genre dimension property";
+  rdfs:range skos:Concept ;
+.
+qb4cc:variety
+  rdfs:subClassOf rdfs:Property, qb:ComponentProperty ;
+  rdfs:label "Variety dimension property";
+  rdfs:range skos:Concept ;
+.
+qb4cc:timePeriod
+  rdfs:subClassOf rdfs:Property, qb:ComponentProperty ;
+  rdfs:label "Time period";
+  rdfs:range qb4cc:TimePeriod ;
+.
