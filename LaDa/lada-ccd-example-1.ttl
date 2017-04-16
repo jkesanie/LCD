@@ -1,0 +1,55 @@
+@prefix qb4cc:          <http://data.hulib.helsinki.fi/ns/qb4cc#> .
+@prefix rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:            <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:           <http://www.w3.org/2004/02/skos/core#> .
+@prefix qb:             <http://purl.org/linked-data/cube#> .
+@prefix dct:        	  <http://purl.org/dc/terms/> .
+@prefix foaf: 			    <http://xmlns.com/foaf/0.1/>.
+@prefix lcd: 			      <http://data.hulib.helsinki.fi/ns/lcd#>.
+@prefix lcd-code: 			      <http://data.hulib.helsinki.fi/ns/lcd-code#>.
+@prefix lcd-cube: 			      <http://data.hulib.helsinki.fi/ns/lcd-cube#>.
+@prefix :               <http://github.com/jkesanie/LCD/QB4CC/hc-cord1#> .
+
+# Example data
+
+:ds-1
+  a qb:DataSet ;
+  dct:title "HC XML - CC" ;
+  qb:structure :dsd-1;
+.
+:dsd-1
+  a qb:DataStructureDefinition;
+  # dimensions
+  qb:component
+    [
+      qb:dimension qb4cc:corpus;
+      qb:componentAttachment qb:Dataset;
+    ],
+    [ qb:dimension qb4cc:genre; ],
+    [ qb:dimension qb4cc:startYear; ],
+    [ qb:dimension qb4cc:endYear; ],
+    [ qb:dimension qb4cc:variety; ];
+
+  # measure
+  qb:component
+    [ qb:measure qb4cc:frequency; ];
+  # attributes
+  qb:component
+    [
+      qb:attribute lcd-cube:frequencyType ;
+      qb:componentRequired "true"^^xsd:boolean;
+      qb:componentAttachment qb:Observation ;
+    ],
+    [
+      qb:attribute lcd-cube:frequencySource ;
+      qb:componentRequired "true"^^xsd:boolean;
+      qb:componentAttachment qb:Observation ;
+    ],
+    [
+      qb:attribute lcd-cube:normalizationBase ;
+      qb:componentRequired "false"^^xsd:boolean;
+      qb:componentAttachment qb:Observation ;
+    ];
+.
