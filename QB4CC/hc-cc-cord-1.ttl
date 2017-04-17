@@ -16,9 +16,18 @@
 
 :hc-cord1-ccd
   a qb4cc:CorpusCompositionStructure ;
-  qb4cc:value qb4cc:WordCount ;
-  qb4cc:dimension qb4cc:Corpus;
-  qb4cc:dimension qb4cc:Period ;
+  qb4cc:value [
+    rdfs:label "Word count" ;
+    qb:measure qb4cc:wordCount ;
+  ] ;
+  qb4cc:dimension [
+    rdfs:label "Corpus" ;
+    qb:dimension qb4cc:corpus ;
+  ];
+  qb4cc:dimension [
+    rdfs:label "Period" ;
+    qb:dimension qb4cc:timePeriod ;
+  ] ;
 .
 :hc-cord1-ds
   a qb4cc:CorpusComposition ;
