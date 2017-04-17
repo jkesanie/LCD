@@ -17,9 +17,11 @@
 	rdfs:label "QB4CC: LCD Corpus Composition extension for RDF data cube"@en;
   rdfs:comment "Jeps" ;
 .
+
+
 # New classes
 
-qb4cc:CorpusCompositionDefinition
+qb4cc:CorpusCompositionStructure
   a rdfs:Class ;
   a owl:Class ;
   rdfs:subClassOf qb:DataStructureDefinition ;
@@ -42,50 +44,43 @@ qb4cc:TimePeriod
 qb4cc:isPartOfComposition
   rdfs:subPropertyOf qb:dataSet ;
 .
-qb4cc:startYear
-  rdfs:subClassOf rdfs:Property ;
-  rdfs:label "Start of the year interval for observation";
-  rdfs:range xsd:integer ;
-.
-qb4cc:endYear
-  rdfs:subClassOf rdfs:Property ;
-  rdfs:label "End of the year interval for observation";
-  rdfs:range xsd:integer ;
+
+qb4cc:value
+  rdfs:subPropertyOf qb:component ;
 .
 
-# Measure
+qb4cc:dimension
+  rdfs:subPropertyOf qb:component ;
+.
+
+# Measures
 qb4cc:wordCount
-  rdfs:subClassOf qb:MeasureProperty, rdf:Property ;
+  rdfs:subClassOf qb:MeasureProperty, qb:ComponentProperty, rdf:Property ;
   rdfs:label "word count" ;
   rdfs:range xsd:integer ;
   rdfs:domain qb4cc:CorpusPart ;
 .
-qb4cc:frequency
-  rdfs:subClassOf qb:MeasureProperty, rdf:Property ;
-  rdfs:label "frequency" ;
-  rdfs:range xsd:decimal ;
-.
 
-# Dimension
-
+# Dimensions
 qb4cc:corpus
   rdfs:subClassOf rdfs:Property, qb:ComponentProperty, qb:DimensionProperty ;
   rdfs:label "Corpus dimension property";
   rdfs:comment "Corpus dimension property that limits how the corpus information is attached to observations";
   rdfs:range lcd:Corpus ;
 .
+
 qb4cc:genre
-  rdfs:subClassOf rdfs:Property, qb:ComponentProperty ;
+  rdfs:subClassOf rdfs:Property, qb:ComponentProperty, qb:DimensionProperty ;
   rdfs:label "Genre dimension property";
   rdfs:range skos:Concept ;
 .
 qb4cc:variety
-  rdfs:subClassOf rdfs:Property, qb:ComponentProperty ;
+  rdfs:subClassOf rdfs:Property, qb:ComponentProperty, qb:DimensionProperty ;
   rdfs:label "Variety dimension property";
   rdfs:range skos:Concept ;
 .
 qb4cc:timePeriod
-  rdfs:subClassOf rdfs:Property, qb:ComponentProperty ;
+  rdfs:subClassOf rdfs:Property, qb:ComponentProperty, qb:DimensionProperty ;
   rdfs:label "Time period";
   rdfs:range qb4cc:TimePeriod ;
 .
