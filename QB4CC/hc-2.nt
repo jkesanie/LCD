@@ -1,17 +1,17 @@
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ccd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.hulib.helsinki.fi/ns/qb4cc#CorpusCompositionStructure> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ccd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataStructureDefinition> .
-_:B5ec769d46d5d0166c589f3ea89a6e4e3 <http://www.w3.org/2000/01/rdf-schema#label> "Word count" .
-_:B5ec769d46d5d0166c589f3ea89a6e4e3 <http://purl.org/linked-data/cube#measure> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ccd> <http://data.hulib.helsinki.fi/ns/qb4cc#value> _:B5ec769d46d5d0166c589f3ea89a6e4e3 .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ccd> <http://purl.org/linked-data/cube#component> _:B5ec769d46d5d0166c589f3ea89a6e4e3 .
-_:B2f327788c64a566effc1705e4135e855 <http://www.w3.org/2000/01/rdf-schema#label> "Corpus" .
-_:B2f327788c64a566effc1705e4135e855 <http://purl.org/linked-data/cube#dimension> <http://data.hulib.helsinki.fi/ns/qb4cc#corpus> .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ccd> <http://data.hulib.helsinki.fi/ns/qb4cc#dimension> _:B2f327788c64a566effc1705e4135e855 .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ccd> <http://purl.org/linked-data/cube#component> _:B2f327788c64a566effc1705e4135e855 .
-_:Bec5dca1f589ba4e3bede0bd3cfc0b221 <http://www.w3.org/2000/01/rdf-schema#label> "Period" .
-_:Bec5dca1f589ba4e3bede0bd3cfc0b221 <http://purl.org/linked-data/cube#dimension> <http://data.hulib.helsinki.fi/ns/qb4cc#timePeriod> .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ccd> <http://data.hulib.helsinki.fi/ns/qb4cc#dimension> _:Bec5dca1f589ba4e3bede0bd3cfc0b221 .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ccd> <http://purl.org/linked-data/cube#component> _:Bec5dca1f589ba4e3bede0bd3cfc0b221 .
+_:B220a0008d3cb6ee2909f4ee04aab000a <http://www.w3.org/2000/01/rdf-schema#label> "Word count" .
+_:B220a0008d3cb6ee2909f4ee04aab000a <http://purl.org/linked-data/cube#measure> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ccd> <http://data.hulib.helsinki.fi/ns/qb4cc#value> _:B220a0008d3cb6ee2909f4ee04aab000a .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ccd> <http://purl.org/linked-data/cube#component> _:B220a0008d3cb6ee2909f4ee04aab000a .
+_:B85465f128b292afba423da7c73033d9e <http://www.w3.org/2000/01/rdf-schema#label> "Corpus" .
+_:B85465f128b292afba423da7c73033d9e <http://purl.org/linked-data/cube#dimension> <http://data.hulib.helsinki.fi/ns/qb4cc#corpus> .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ccd> <http://data.hulib.helsinki.fi/ns/qb4cc#dimension> _:B85465f128b292afba423da7c73033d9e .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ccd> <http://purl.org/linked-data/cube#component> _:B85465f128b292afba423da7c73033d9e .
+_:B9515ba6af843ea2e5f775a3a686ca4f7 <http://www.w3.org/2000/01/rdf-schema#label> "Period" .
+_:B9515ba6af843ea2e5f775a3a686ca4f7 <http://purl.org/linked-data/cube#dimension> <http://data.hulib.helsinki.fi/ns/qb4cc#timePeriod> .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ccd> <http://data.hulib.helsinki.fi/ns/qb4cc#dimension> _:B9515ba6af843ea2e5f775a3a686ca4f7 .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ccd> <http://purl.org/linked-data/cube#component> _:B9515ba6af843ea2e5f775a3a686ca4f7 .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.hulib.helsinki.fi/ns/qb4cc#CorpusComposition> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataSet> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> <http://purl.org/dc/terms/title> "Simple corpus composition of HC using time periods." .
@@ -24,7 +24,7 @@ _:Bec5dca1f589ba4e3bede0bd3cfc0b221 <http://purl.org/linked-data/cube#dimension>
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs1> <http://data.hulib.helsinki.fi/ns/qb4cc#isPartOfComposition> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs1> <http://purl.org/linked-data/cube#dataSet> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs1> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "2190"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs1> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "2190.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.hulib.helsinki.fi/ns/qb4cc#CorpusPart> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs1> <http://data.hulib.helsinki.fi/ns/qb4cc#timePeriod> <http://github.com/jkesanie/LCD/QB4CC#OE1> .
@@ -36,7 +36,7 @@ _:Bec5dca1f589ba4e3bede0bd3cfc0b221 <http://purl.org/linked-data/cube#dimension>
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs2> <http://data.hulib.helsinki.fi/ns/qb4cc#isPartOfComposition> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs2> <http://purl.org/linked-data/cube#dataSet> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs2> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "92050"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs2> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "92050.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.hulib.helsinki.fi/ns/qb4cc#CorpusPart> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs2> <http://data.hulib.helsinki.fi/ns/qb4cc#timePeriod> <http://github.com/jkesanie/LCD/QB4CC#OE2> .
@@ -48,7 +48,7 @@ _:Bec5dca1f589ba4e3bede0bd3cfc0b221 <http://purl.org/linked-data/cube#dimension>
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs3> <http://data.hulib.helsinki.fi/ns/qb4cc#isPartOfComposition> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs3> <http://purl.org/linked-data/cube#dataSet> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs3> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "251630"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs3> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "251630.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.hulib.helsinki.fi/ns/qb4cc#CorpusPart> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs3> <http://data.hulib.helsinki.fi/ns/qb4cc#timePeriod> <http://github.com/jkesanie/LCD/QB4CC#OE3> .
@@ -60,7 +60,7 @@ _:Bec5dca1f589ba4e3bede0bd3cfc0b221 <http://purl.org/linked-data/cube#dimension>
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs4> <http://data.hulib.helsinki.fi/ns/qb4cc#isPartOfComposition> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs4> <http://purl.org/linked-data/cube#dataSet> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs4> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "67380"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs4> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "67380.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.hulib.helsinki.fi/ns/qb4cc#CorpusPart> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs4> <http://data.hulib.helsinki.fi/ns/qb4cc#timePeriod> <http://github.com/jkesanie/LCD/QB4CC#OE4> .
@@ -72,7 +72,7 @@ _:Bec5dca1f589ba4e3bede0bd3cfc0b221 <http://purl.org/linked-data/cube#dimension>
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs5> <http://data.hulib.helsinki.fi/ns/qb4cc#isPartOfComposition> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs5> <http://purl.org/linked-data/cube#dataSet> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs5> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "113010"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs5> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "113010.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.hulib.helsinki.fi/ns/qb4cc#CorpusPart> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs5> <http://data.hulib.helsinki.fi/ns/qb4cc#timePeriod> <http://github.com/jkesanie/LCD/QB4CC#ME1> .
@@ -84,7 +84,7 @@ _:Bec5dca1f589ba4e3bede0bd3cfc0b221 <http://purl.org/linked-data/cube#dimension>
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs6> <http://data.hulib.helsinki.fi/ns/qb4cc#isPartOfComposition> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs6> <http://purl.org/linked-data/cube#dataSet> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs6> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "97480"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs6> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "97480.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.hulib.helsinki.fi/ns/qb4cc#CorpusPart> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs6> <http://data.hulib.helsinki.fi/ns/qb4cc#timePeriod> <http://github.com/jkesanie/LCD/QB4CC#ME2> .
@@ -96,7 +96,7 @@ _:Bec5dca1f589ba4e3bede0bd3cfc0b221 <http://purl.org/linked-data/cube#dimension>
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs7> <http://data.hulib.helsinki.fi/ns/qb4cc#isPartOfComposition> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs7> <http://purl.org/linked-data/cube#dataSet> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs7> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "184230"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs7> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "184230.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.hulib.helsinki.fi/ns/qb4cc#CorpusPart> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs7> <http://data.hulib.helsinki.fi/ns/qb4cc#timePeriod> <http://github.com/jkesanie/LCD/QB4CC#ME3> .
@@ -108,7 +108,7 @@ _:Bec5dca1f589ba4e3bede0bd3cfc0b221 <http://purl.org/linked-data/cube#dimension>
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs8> <http://data.hulib.helsinki.fi/ns/qb4cc#isPartOfComposition> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs8> <http://purl.org/linked-data/cube#dataSet> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs8> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "213850"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs8> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "213850.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.hulib.helsinki.fi/ns/qb4cc#CorpusPart> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs8> <http://data.hulib.helsinki.fi/ns/qb4cc#timePeriod> <http://github.com/jkesanie/LCD/QB4CC#ME4> .
@@ -120,7 +120,7 @@ _:Bec5dca1f589ba4e3bede0bd3cfc0b221 <http://purl.org/linked-data/cube#dimension>
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs9> <http://data.hulib.helsinki.fi/ns/qb4cc#isPartOfComposition> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs9> <http://purl.org/linked-data/cube#dataSet> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs9> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "190160"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs9> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "190160.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.hulib.helsinki.fi/ns/qb4cc#CorpusPart> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs9> <http://data.hulib.helsinki.fi/ns/qb4cc#timePeriod> <http://github.com/jkesanie/LCD/QB4CC#EMod1> .
@@ -132,7 +132,7 @@ _:Bec5dca1f589ba4e3bede0bd3cfc0b221 <http://purl.org/linked-data/cube#dimension>
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs10> <http://data.hulib.helsinki.fi/ns/qb4cc#isPartOfComposition> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs10> <http://purl.org/linked-data/cube#dataSet> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs10> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "189800"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs10> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "189800.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.hulib.helsinki.fi/ns/qb4cc#CorpusPart> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs10> <http://data.hulib.helsinki.fi/ns/qb4cc#timePeriod> <http://github.com/jkesanie/LCD/QB4CC#EMod2> .
@@ -144,7 +144,7 @@ _:Bec5dca1f589ba4e3bede0bd3cfc0b221 <http://purl.org/linked-data/cube#dimension>
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs11> <http://data.hulib.helsinki.fi/ns/qb4cc#isPartOfComposition> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs11> <http://purl.org/linked-data/cube#dataSet> <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-ds> .
-<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs11> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "171040"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs11> <http://data.hulib.helsinki.fi/ns/qb4cc#wordCount> "171040.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.hulib.helsinki.fi/ns/qb4cc#CorpusPart> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#Observation> .
 <http://github.com/jkesanie/LCD/QB4CC#hc-cord1-obs11> <http://data.hulib.helsinki.fi/ns/qb4cc#timePeriod> <http://github.com/jkesanie/LCD/QB4CC#EMod3> .
@@ -208,8 +208,8 @@ _:Bec5dca1f589ba4e3bede0bd3cfc0b221 <http://purl.org/linked-data/cube#dimension>
 <http://github.com/jkesanie/LCD/QB4CC#EMod3> <http://data.hulib.helsinki.fi/ns/lcd#startYear> "1640"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://github.com/jkesanie/LCD/QB4CC#EMod3> <http://data.hulib.helsinki.fi/ns/lcd#endYear> "1710"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://github.com/jkesanie/LCD/QB4CC#qb4cc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-_:Bd1e369b069301ccd310ba82251667987 <http://xmlns.com/foaf/0.1/name> "Joonas Kesäniemi" .
-<http://github.com/jkesanie/LCD/QB4CC#qb4cc> <http://purl.org/dc/terms/creator> _:Bd1e369b069301ccd310ba82251667987 .
+_:B5e3a8a556c963be8f968b334401e36d6 <http://xmlns.com/foaf/0.1/name> "Joonas Kesäniemi" .
+<http://github.com/jkesanie/LCD/QB4CC#qb4cc> <http://purl.org/dc/terms/creator> _:B5e3a8a556c963be8f968b334401e36d6 .
 <http://github.com/jkesanie/LCD/QB4CC#qb4cc> <http://purl.org/dc/terms/created> "2017-04-15"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://github.com/jkesanie/LCD/QB4CC#qb4cc> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <http://github.com/jkesanie/LCD/QB4CC#qb4cc> <http://www.w3.org/2000/01/rdf-schema#label> "QB4CC: LCD Corpus Composition extension for RDF data cube"@en .
