@@ -86,7 +86,7 @@ qb4cc:timePeriod
   rdfs:range qb4cc:TimePeriod ;
 .
 
-qb4cc:idno
+qb4cc:text2
   rdfs:subClassOf rdfs:Property, qb:ComponentProperty, qb:DimensionProperty ;
   rdfs:label "Text file";
   rdfs:comment "";
