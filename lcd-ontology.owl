@@ -1,0 +1,310 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  	xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:lcd="http://data.helsinki.fi/ns/lcd#"
+    xmlns:lada="http://data.helsinki.fi/ns/lada#"
+    xmlns:qb4cc="http://data.helsinki.fi/ns/qb4cc#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+>
+
+  <!-- OWL statements -->
+  <owl:Ontology rdf:about="http://data.helsinki.fi/ns/lcd#" >
+    <rdfs:comment>LCD Ontology</rdfs:comment>
+<!--    <owl:priorVersion rdf:resource="http://www.example.org/wine-112102.owl"/> -->
+    <!-- <owl:imports rdf:resource="https://www.w3.org/2008/05/skos"/>  -->
+    <rdfs:label>LCD ontology</rdfs:label>
+  </owl:Ontology>
+
+<!-- Classes -->
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#ContentDetails">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+    <rdfs:isDefinedBy rdf:resource="http://data.helsinki.fi/ns/lcd#"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#Publication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#Corpus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+    <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Person" />
+  </rdfs:Class>
+
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#File">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#PublicationFile">
+    <rdfs:subClassOf rdf:resource="http://data.helsinki.fi/ns/lcd#File"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#ExcelDataFile">
+    <rdfs:subClassOf rdf:resource="http://data.helsinki.fi/ns/lcd#File"/>
+  </rdfs:Class>
+
+<!-- Extensions -->
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#AnnotatedExcelDataFile">
+    <rdfs:subClassOf rdf:resource="http://data.helsinki.fi/ns/lcd#File"/>
+  </rdfs:Class>
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#annotatedVersion">
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#AnnotatedExcelDataFile"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ExcelDataFile"/>
+  </owl:ObjectProperty>
+
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/qb4cc#CorpusComposition">
+    <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#DataSet"/>
+  </rdfs:Class>
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/qb4cc#corpus">
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Corpus"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/qb4cc#CorpusComposition"/>
+  </owl:ObjectProperty>
+
+<!-- Extensions end -->
+
+
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#TimePeriod">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  </rdfs:Class>
+
+<!-- skos concept schemes -->
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#StatisticalMethod">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#Dialectology">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#Variety">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#Sociolinguistics">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#DiscourseAnalysis">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#SocialCategory">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#Pragmatics">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#LanguageContact">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#Grammar">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://data.helsinki.fi/ns/lcd#Genre">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme" />
+  </rdfs:Class>
+
+
+<!-- Object properties -->
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#grammar">
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Grammar"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#corpus">
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Corpus"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#publication">
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Publication"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#publicationfile">
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#PublicationFile"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#Publication"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#datafile">
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#ExcelDataFile"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#PublicationFile"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#author">
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Person"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#Publication"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#editor">
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Person"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#Publication"/>
+  </owl:ObjectProperty>
+
+
+<!-- data property -->
+
+  <owl:DataTypeProperty rdf:about="http://data.helsinki.fi/ns/lcd#topic">
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DataTypeProperty>
+
+  <owl:DataTypeProperty rdf:about="http://data.helsinki.fi/ns/lcd#keyword">
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DataTypeProperty>
+
+  <owl:DataTypeProperty rdf:about="http://data.helsinki.fi/ns/lcd#summaryofresults">
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DataTypeProperty>
+
+
+  <owl:DataTypeProperty rdf:about="http://data.helsinki.fi/ns/lcd#abbreviation">
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#Corpus"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DataTypeProperty>
+
+  <owl:DataTypeProperty rdf:about="http://data.helsinki.fi/ns/lcd#size">
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#Corpus"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+  </owl:DataTypeProperty>
+
+  <owl:DataTypeProperty rdf:about="http://data.helsinki.fi/ns/lcd#link">
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#Corpus"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  </owl:DataTypeProperty>
+
+
+
+<!-- concept related object properties -->
+<owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#statisticalmethod" rdfs:label="Statistical method" >
+  <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#StatisticalMethod"/>
+  <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#dialectology" rdfs:label="dialectology" >
+  <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Dialectology"/>
+  <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#sociolinguistics" rdfs:label="sociolinguistics" >
+  <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Sociolinguistics"/>
+  <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#pragmatics" rdfs:label="pragmatics" >
+  <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Pragmatics"/>
+  <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#discourseanalysis" rdfs:label="discourse analysis" >
+  <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#DiscourseAnalysis"/>
+  <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#languagecontact" rdfs:label="language contact" >
+  <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#LanguageContact"/>
+  <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+</owl:ObjectProperty>
+
+
+<owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#grammar" rdfs:label="grammar" >
+  <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Grammar"/>
+  <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+</owl:ObjectProperty>
+
+
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#cdsc" rdfs:label="Social category" >
+    <rdfs:subPropertyOf rdf:resource="http://data.helsinki.fi/ns/lcd#socialcategory" />
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#SocialCategory"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#csc" rdfs:label="Social category">
+    <rdfs:subPropertyOf rdf:resource="http://data.helsinki.fi/ns/lcd#socialcategory" />
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#SocialCategory"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#Corpus"/>
+  </owl:ObjectProperty>
+<!--
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#socialcategory">
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#SocialCategory"/>
+  </owl:ObjectProperty>
+-->
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#cdgenre" rdfs:label="genre" >
+    <rdfs:subPropertyOf rdf:resource="http://data.helsinki.fi/ns/lcd#genre" />
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Genre"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#cgenre" rdfs:label="genre">
+    <rdfs:subPropertyOf rdf:resource="http://data.helsinki.fi/ns/lcd#genre" />
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Genre"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#Corpus"/>
+  </owl:ObjectProperty>
+<!--
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#genre">
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Genre"/>
+  </owl:ObjectProperty>
+-->
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#cdvariety" rdfs:label="variety" >
+    <rdfs:subPropertyOf rdf:resource="http://data.helsinki.fi/ns/lcd#variety" />
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Variety"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#cvariety" rdfs:label="variety">
+    <rdfs:subPropertyOf rdf:resource="http://data.helsinki.fi/ns/lcd#variety" />
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Variety"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#Corpus"/>
+  </owl:ObjectProperty>
+<!--
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#variety">
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#Variety"/>
+  </owl:ObjectProperty>
+-->
+
+
+<!--
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#cdtimeperiod" rdfs:label="time period" >
+    <rdfs:subPropertyOf rdf:resource="http://data.helsinki.fi/ns/lcd#timeperiod" />
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#TimePeriod"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#ctimeperiod" rdfs:label="time period">
+    <rdfs:subPropertyOf rdf:resource="http://data.helsinki.fi/ns/lcd#timeperiod" />
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#TimePeriod"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#Corpus"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#timeperiod">
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#TimePeriod"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#cdcustomtimeperiod" rdfs:label="custom time period" >
+    <rdfs:subPropertyOf rdf:resource="http://data.helsinki.fi/ns/lcd#timeperiod" />
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#TimePeriod"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#ContentDetails"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://data.helsinki.fi/ns/lcd#ccustomtimeperiod" rdfs:label="custom time period">
+    <rdfs:subPropertyOf rdf:resource="http://data.helsinki.fi/ns/lcd#timeperiod" />
+    <rdfs:range rdf:resource="http://data.helsinki.fi/ns/lcd#TimePeriod"/>
+    <rdfs:domain rdf:resource="http://data.helsinki.fi/ns/lcd#Corpus"/>
+  -->
+</rdf:RDF>
